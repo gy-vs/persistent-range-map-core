@@ -1,0 +1,23 @@
+{
+  "name": "persistent-range-map",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Persistent (immutable, versioned) range map: maps non-overlapping half-open intervals to values, with structural sharing between versions.",
+  "type": "module",
+  "main": "dist/src/range-map.js",
+  "types": "dist/src/range-map.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/src/range-map.d.ts",
+      "default": "./dist/src/range-map.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "tsc && node --test dist/test/"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "typescript": "^5.5.0"
+  }
+}
